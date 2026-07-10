@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.carrusel-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Animación de 9 segundos (3s por imagen) infinita */
+  animation: cambiarFondo 27s infinite;
+  z-index: 1;
+}
+
+/* Lámina negra transparente superpuesta */
+.carrusel-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Ocupa todo el espacio (top, left, right, bottom: 0) */
+  background-color: rgba(0, 0, 0, 0.65); /* 65% de oscuridad, ajústalo si lo quieres más claro o más oscuro */
+  z-index: -1; /* Se coloca detrás del texto pero delante de la imagen */
+}
+
+/* Animación de las imágenes */
+@keyframes cambiarFondo {
+  0%, 30%  { background-image: url('./assets/Carrusel1.webp'); }
+  33%, 63% { background-image: url('./assets/Carrusel2.webp'); }
+  66%, 96% { background-image: url('./assets/Carrusel3.webp'); }
+  100%     { background-image: url('./assets/Carrusel1.webp'); }
+}
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  /* Reemplaza las rutas si es necesario, deben ser iguales a las de tu animación */
+  content: url('./assets/Carrusel1.webp') url('./assets/Carrusel2.webp') url('./assets/Carrusel3.webp') url('./assets/Logo.webp');
+}
+
+/* --- ANIMACIÓN PARA LA CINTA DE TECNOLOGÍAS --- */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite; /* 25s es la velocidad, ajusta si quieres más rápido */
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
