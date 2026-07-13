@@ -878,10 +878,10 @@ export default function App() {
           </div>
           <div className="flex space-x-4">
              {/* Redes Sociales con TikTok Incluido */}
-             <a href="#" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-transparent transition-all">
+             <a href="https://www.instagram.com/clad.services?igsh=NTJ3anAwZXFiMHps" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-transparent transition-all">
                <FaInstagram className="w-4 h-4" />
              </a>
-             <a href="#" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-transparent transition-all">
+             <a href="https://www.linkedin.com/in/clad-services-22584941a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-transparent transition-all">
                <FaLinkedin className="w-4 h-4" />
              </a>
              <a href="https://www.tiktok.com/@clad.services?_r=1&_t=ZS-97KH0EgwP8i" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-transparent transition-all">
