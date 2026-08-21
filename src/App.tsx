@@ -139,9 +139,9 @@ const HomeView = ({ changeView }: { changeView: (v: string) => void }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-800/50">
             {[
-              { end: 30, suffix: '+', label: 'Proyectos Entregados' },
+              { end: 3, suffix: '+', label: 'Proyectos Entregados' },
               { end: 100, suffix: '%', label: 'Clientes Satisfechos' },
-              { end: 3, label: 'Años de Experiencia' },
+              { end: 1, label: 'Año de Experiencia' },
               { text: '24/7', label: 'Soporte Técnico', isText: true },
             ].map((stat, idx) => (
               <Reveal key={idx} delay={idx * 100} direction="up">
@@ -590,7 +590,7 @@ const PlanesView = () => (
             <h3 className="text-3xl font-extrabold text-slate-900 mb-10 text-center">Preguntas Frecuentes</h3>
             <div className="space-y-6">
                {[
-                  { q: '¿Cuánto tiempo tardan en entregar la página web?', a: 'Dependiendo de la complejidad, una Landing Page puede tomar de 7 a 10 días, mientras que un E-commerce o Sistema a Medida toma de 3 a 5 semanas de desarrollo y pruebas.' },
+                  { q: '¿Cuánto tiempo tardan en entregar la página web?', a: 'Dependiendo de la complejidad, una Landing Page puede tomar de 7 a 10 días, mientras que un E-commerce o Sistema a Medida toma de 2 a 3 meses de desarrollo y pruebas.' },
                   { q: '¿Ofrecen soporte o mantenimiento luego de entregar la web?', a: 'Sí. Todos nuestros planes incluyen 15 días de soporte técnico post-lanzamiento para garantizar estabilidad. Además, ofrecemos planes mensuales de mantenimiento preventivo si lo deseas.' },
                   { q: '¿Ustedes redactan los textos y toman las fotos?', a: 'Nosotros nos encargamos de la estructura y el diseño UX/UI. El material corporativo (textos específicos de la marca, fotografías de productos o equipo) debe ser proporcionado por el cliente antes de iniciar.' }
                ].map((faq, idx) => (
